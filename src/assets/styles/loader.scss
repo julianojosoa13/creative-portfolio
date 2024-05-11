@@ -41,7 +41,7 @@
     border-radius: 2px;
     &--inner {
       height: 100%;
-      width: 50%;
+      width: 0;
       border-radius: 2px;
       background-color: #6cff8c;
     }
@@ -104,5 +104,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+  }
+
+  &__width_animation {
+    animation: width_animation 1s forwards;
+    @keyframes width_animation {
+      0% {
+        width: 85%;
+      }
+      100% {
+        width: 280px;
+      }
+    }
   }
 }
