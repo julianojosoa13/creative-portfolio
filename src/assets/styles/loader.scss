@@ -1,3 +1,5 @@
+@import "./base.scss";
+
 .loading {
   position: fixed;
   top: 0;
@@ -18,9 +20,14 @@
     position: relative;
     height: 200px;
     width: 500px;
-    border: 3px solid #6cff8d;
-    border-top: 3px solid #6cff8c7a;
-    border-bottom: 3px solid #6cff8c7a;
+    border: 3px solid $green-color;
+    border-top: 3px solid $dark-green-color;
+    border-bottom: 3px solid $dark-green-color;
+    @media (max-width: 600px) {
+      & {
+        width: 90vw;
+      }
+    }
   }
 
   &__bar {
@@ -50,6 +57,12 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 355px) {
+      & {
+        font-size: 17px;
+      }
+    }
+
     &--dot {
       width: 15px;
       height: 15px;
@@ -60,12 +73,36 @@
       @keyframes pulse {
         from {
           opacity: 0;
-          background: #6cff8d;
+          background: $green-color;
         }
         to {
           opacity: 1;
         }
       }
     }
+
+    &--border {
+      width: 85%;
+      height: 1px;
+      background-color: $dark-green-color;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__counter {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
   }
 }
