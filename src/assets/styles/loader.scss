@@ -13,4 +13,41 @@
   font-family: "Orbitron", sans-serif;
   font-size: 30px;
   color: aqua;
+
+  &__box {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    border: 3px solid #6cff8d;
+    border-top: 3px solid #6cff8c7a;
+    border-bottom: 3px solid #6cff8c7a;
+  }
+
+  &__bar {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    border-radius: 2px;
+    &--inner {
+      height: 100%;
+      width: 50%;
+      border-radius: 2px;
+      background-color: #6cff8c;
+    }
+  }
+
+  &__text {
+    position: relative;
+    color: #fff;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
