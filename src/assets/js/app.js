@@ -37,5 +37,10 @@ let barInterval = setInterval(() => {
       width: currentWidth,
       borderRadius: "50%",
     });
+
+    gsap.to(".loading__svg", {
+      duration: 5,
+      opacity: 1,
+    });
   }
 }, 20);
