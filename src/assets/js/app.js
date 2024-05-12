@@ -15,6 +15,19 @@ let barInterval = setInterval(() => {
       duration: 5,
       rotate: "90deg",
       left: "1000%",
+      top: "-800%",
+    });
+
+    gsap.to(".loading__text,.loading__counter", {
+      duration: 1,
+      opacity: 0,
+    });
+
+    gsap.to(".loading__box", {
+      duration: 1,
+      height: "500px",
+      borderRadius: "50%",
+      borderColor: "#6cff8d",
     });
   }
 }, 20);
