@@ -18,10 +18,10 @@ let barInterval = setInterval(() => {
     clearInterval(barInterval);
 
     gsap.to(".loading__bar", {
+      delay: 0.15,
       duration: 5,
       rotate: "90deg",
       left: "1000%",
-      top: "-800%",
     });
 
     gsap.to(".loading__text,.loading__counter", {
@@ -41,6 +41,25 @@ let barInterval = setInterval(() => {
     gsap.to(".loading__svg", {
       duration: 10,
       opacity: 1,
+      rotate: "360deg",
+    });
+
+    gsap.to(".loading__box", {
+      delay: 2,
+      border: "none",
+    });
+
+    gsap.to(".loading", {
+      delay: 2,
+      duration: 2,
+      //   zIndex: 1,
+      background: "transparent",
+      opacity: 0.5,
+    });
+
+    gsap.to(".loading__svg", {
+      duration: 50,
+      delay: 4,
       rotate: "360deg",
     });
   }
