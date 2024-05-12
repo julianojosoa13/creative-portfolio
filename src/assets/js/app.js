@@ -41,6 +41,7 @@ let barInterval = setInterval(() => {
     gsap.to(".loading__svg", {
       duration: 10,
       opacity: 1,
+      rotate: "360deg",
     });
   }
 }, 20);
