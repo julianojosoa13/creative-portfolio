@@ -16,6 +16,15 @@
   font-size: 30px;
   color: aqua;
 
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: -1;
+  }
+
   &__box {
     position: relative;
     height: 200px;
