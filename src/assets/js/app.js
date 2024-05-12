@@ -4,9 +4,9 @@ let c = 0;
 
 let barInterval = setInterval(() => {
   bar.style.width = c + "%";
-  progress.innerHTML = c + "%";
+  progress.innerText = c + "%";
   c++;
   if (c > 100) {
     clearInterval(barInterval);
   }
-}, 50);
+}, 20);
