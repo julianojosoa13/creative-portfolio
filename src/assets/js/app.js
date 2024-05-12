@@ -39,7 +39,7 @@ let barInterval = setInterval(() => {
     });
 
     gsap.to(".loading__svg", {
-      duration: 5,
+      duration: 10,
       opacity: 1,
     });
   }
