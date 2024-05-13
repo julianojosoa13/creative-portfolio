@@ -58,8 +58,8 @@ let barInterval = setInterval(() => {
     });
 
     gsap.to(".loading__svg", {
-      duration: 50,
-      delay: 4,
+      duration: 100,
+      delay: 2,
       rotate: "360deg",
     });
   }
