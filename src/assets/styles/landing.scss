@@ -37,4 +37,12 @@
       }
     }
   }
+  .centered_link {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10;
+  }
 }
