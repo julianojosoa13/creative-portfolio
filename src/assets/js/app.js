@@ -5,7 +5,6 @@ const progress = document.querySelector(".loading__counter--number");
 
 const progressBox = document.querySelector(".loading__box");
 
-const progressSvg = document.querySelector(".loading__svg");
 
 let c = 0;
 
@@ -16,6 +15,11 @@ let barInterval = setInterval(() => {
   c++;
   if (c > 100) {
     clearInterval(barInterval);
+
+    gsap.to(".header", {
+      duration: 0.5,
+      zIndex: 20
+    })
 
     gsap.to(".loading__bar", {
       delay: 0.15,
