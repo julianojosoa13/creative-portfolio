@@ -5,7 +5,6 @@ const progress = document.querySelector(".loading__counter--number");
 
 const progressBox = document.querySelector(".loading__box");
 
-
 let c = 0;
 
 let barInterval = setInterval(() => {
@@ -17,9 +16,9 @@ let barInterval = setInterval(() => {
     clearInterval(barInterval);
 
     gsap.to(".header", {
-      duration: 0.5,
-      zIndex: 20
-    })
+      duration: 10,
+      zIndex: 20,
+    });
 
     gsap.to(".loading__bar", {
       delay: 0.15,
