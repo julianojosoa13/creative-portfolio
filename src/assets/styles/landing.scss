@@ -45,5 +45,16 @@
         display: none;
       }
     }
+    @media (max-width: 370px) {
+      & {
+        left: 36%;
+      }
+      &__wrap {
+        gap: 20%;
+      }
+      .styledLink[data-text="Home"] {
+        display: none
+      } 
+    }
   }
 }
