@@ -27,12 +27,8 @@
       align-items: center;
       gap: 2rem;
 
-      @media (max-width: 714px) {
-        display: none;
-      }
-
       li {
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 700;
       }
     }
@@ -40,6 +36,12 @@
     @media (max-width: 1200px) {
       &__wrap {
         width: 100vw;
+      }
+    }
+
+    @media (max-width: 700px) {
+      &__sm {
+        display: none;
       }
     }
   }
