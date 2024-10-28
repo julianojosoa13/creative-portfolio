@@ -38,6 +38,23 @@
         width: 100vw;
       }
     }
+
+    @media (max-width: 700px) {
+      &__sm {
+        display: none;
+      }
+    }
+    @media (max-width: 370px) {
+      & {
+        left: 36%;
+      }
+      &__wrap {
+        gap: 20%;
+      }
+      .styledLink[data-text="Home"] {
+        display: none
+      } 
+    }
     
   }
 
@@ -49,6 +66,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    z-index: 20;
+    z-index: 1;
   }
 }

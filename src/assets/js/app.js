@@ -20,6 +20,12 @@ let barInterval = setInterval(() => {
       zIndex: 20,
     });
 
+    gsap.to(".socials", {
+      duration: 10,
+      zIndex: 20,
+    });
+
+
     gsap.to(".loading__bar", {
       delay: 0.15,
       duration: 5,
