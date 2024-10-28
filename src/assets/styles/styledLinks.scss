@@ -1,3 +1,5 @@
+@import "./base.scss";
+
 .styledLink {
   position: relative;
   display: grid;
@@ -52,5 +54,25 @@
 .coloredIcon {
   color: #fff;
   font-size: 37px;
-  text-shadow: -10px -20px red, -15px -15px blue;
+  &:hover {
+    animation: coloredIconAnimation .2s infinite;
+  }
+  @keyframes coloredIconAnimation {
+    0% {
+      text-shadow: 5px 4px $red-color,-5px -6px $blue-color;
+    }
+    25% {
+      text-shadow: -5px -6px $red-color,5px 4px $blue-color;
+    }
+    50% {
+      text-shadow: 5px -4px $red-color,-8px 4px $blue-color;
+    }
+    75% {
+      text-shadow: -8px -4px $red-color,-5px -4px $blue-color;
+    }
+    100% {
+      text-shadow: -5px 0 $red-color,5px -4px $blue-color;
+    }
+  }
+  
 }
